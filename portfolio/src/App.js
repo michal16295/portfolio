@@ -7,13 +7,14 @@ import {
   SideBar,
   Contact,
   Experience,
+  Theme,
 } from "./components";
 
 function App() {
   return (
-    <div>
+    <Theme>
       <Header />
-    </div>
+    </Theme>
   );
 }
 
