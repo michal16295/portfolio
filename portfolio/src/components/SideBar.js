@@ -41,9 +41,17 @@ const Container = styled.div`
     margin: 0px auto;
     background-color: ${({ theme: { colors } }) => colors.lightSlate};
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Icon = styled.div`
   margin: 10px 0;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
