@@ -5,9 +5,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: ${({ theme: { colors } }) => colors.slate};
-    background: ${({ theme: { colors } }) => colors.darkNavy};
+    background: ${({ theme: { colors } }) => colors.navy};
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     box-sizing: border-box;
+    position: relative;
   }
 
   *{
