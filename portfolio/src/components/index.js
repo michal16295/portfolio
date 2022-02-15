@@ -4,6 +4,5 @@ import Experience from "./Experience";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import Projects from "./Project";
-import Theme from "./Theme";
 
-export { About, Contact, Experience, Header, SideBar, Projects, Theme };
+export { About, Contact, Experience, Header, SideBar, Projects };

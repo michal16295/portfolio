@@ -7,12 +7,14 @@ import {
   SideBar,
   Contact,
   Experience,
-  Theme,
 } from "./components";
+
+import { Theme, GlobalStyle } from "./styles";
 
 function App() {
   return (
     <Theme>
+      <GlobalStyle />
       <Header />
     </Theme>
   );
