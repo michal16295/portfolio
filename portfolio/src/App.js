@@ -16,6 +16,7 @@ function App() {
     <Theme>
       <GlobalStyle />
       <Header />
+      <SideBar />
     </Theme>
   );
 }

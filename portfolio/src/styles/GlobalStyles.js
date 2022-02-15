@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     box-sizing: border-box;
     position: relative;
+    padding: 0 40px;
   }
 
   *{
