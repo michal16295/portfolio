@@ -1,15 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+import Wrapper from "./Wrapper";
+
 const Experience = () => {
-  return (
-    <Container>
-      <Title>
-        <div>02.</div> Where I've Worked
-        <Line />
-      </Title>
-    </Container>
-  );
+  return <Wrapper index="02." title="Where I've Worked"></Wrapper>;
 };
 
 export default Experience;

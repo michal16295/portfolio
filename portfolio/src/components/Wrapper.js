@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import Wrapper from "./Wrapper";
-const Projects = () => {
-  return <Wrapper index="03." title="My Projects"></Wrapper>;
+
+const Wrapper = ({ title, index, children }) => {
+  return (
+    <Container>
+      <Title>
+        <div>{index}</div> {title}
+        <Line />
+      </Title>
+      {children}
+    </Container>
+  );
 };
 
-export default Projects;
+export default Wrapper;
+
 const Container = styled.div`
   width: 50%;
   margin: auto;
