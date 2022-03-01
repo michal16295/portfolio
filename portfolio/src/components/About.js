@@ -6,7 +6,12 @@ const About = () => {
     <Container>
       <Intro>Hi, my name is</Intro>
       <Name>Michal Barski.</Name>
-      <Title>I'm a Full stack developer</Title>
+      <Title>Full stack developer</Title>
+      <Description>
+        I’m a software engineer.
+        <br /> Currently, working on building accessible, patient-centered
+        products at <strong>Gistmd</strong>.
+      </Description>
     </Container>
   );
 };
@@ -14,7 +19,7 @@ const About = () => {
 export default About;
 
 const Container = styled.div`
-  width: 60%;
+  width: 50%;
   margin: auto;
   height: 100vh;
   display: flex;
@@ -36,8 +41,19 @@ const Name = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: clamp(1.125rem, 8vw, 3rem);
+  font-size: clamp(25px, 8vw, 50px);
   font-weight: 600;
   font-family: "Calibre";
   color: ${({ theme: { colors } }) => colors.slate};
+`;
+
+const Description = styled.p`
+  line-height: 1.5;
+  font-smooth: antialiased;
+  font-size: 20px;
+
+  strong {
+    cursor: pointer;
+    color: ${({ theme: { colors } }) => colors.green};
+  }
 `;

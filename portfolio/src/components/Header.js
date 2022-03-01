@@ -76,6 +76,8 @@ const Container = styled.div`
   position: fixed;
   top: 0;
   z-index: 10;
+  background: ${({ theme: { colors } }) => colors.navy};
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 `;
 
 const Circle = styled.div`

@@ -22,6 +22,8 @@ function App() {
       <SideBar />
       <Main expand={expand}>
         <About />
+        <Experience />
+        <Projects />
       </Main>
     </Theme>
   );
