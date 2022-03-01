@@ -26,6 +26,7 @@ const SideBar = () => {
 export default SideBar;
 
 const Container = styled.div`
+  margin-left: 40px;
   position: fixed;
   bottom: 0;
   z-index: 10;

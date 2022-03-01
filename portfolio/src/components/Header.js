@@ -5,9 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import { BsList } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({ expand, handleExpand }) => {
   const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
-  const [expand, setExpand] = useState(false);
+
   const actions = [
     {
       id: "01.",
@@ -48,13 +48,13 @@ const Header = () => {
       {isMobile ? (
         <>
           {!expand && (
-            <CloseBtn onClick={() => setExpand(true)}>
+            <CloseBtn onClick={() => handleExpand(true)}>
               <BsList size={50} color="#64ffda" />
             </CloseBtn>
           )}
           {List(expand)}
           {expand && (
-            <CloseBtn onClick={() => setExpand(false)}>
+            <CloseBtn onClick={() => handleExpand(false)}>
               <AiOutlineClose size={50} color="#64ffda" />
             </CloseBtn>
           )}
@@ -71,8 +71,11 @@ export default Header;
 const Container = styled.div`
   display: flex;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 40px;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 `;
 
 const Circle = styled.div`
